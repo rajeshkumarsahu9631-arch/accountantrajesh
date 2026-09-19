@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajesh Kumar - Accounting & GST Services</title>
+  <meta name="description" content="Accounting, GST, Tally and ITR services. Contact us for professional accounting support.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">Rajesh <span>Accounts</span></div>
+      <button class="menu" onclick="toggleMenu()">☰</button>
+      <nav id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#payment">Payment</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="tag">ACCOUNTING • GST • TALLY • ITR</p>
+          <h1>Professional Accounting & Tax Services</h1>
+          <p class="hero-text">Business accounting, GST returns, Tally work and tax-related support — simple and professional service.</p>
+          <div class="buttons">
+            <a class="btn primary" href="#contact">Contact Us</a>
+            <a class="btn secondary" href="https://wa.me/919999999999" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-icon">₹</div>
+          <h3>Accounting Made Simple</h3>
+          <p>Accurate records, timely compliance and practical support for your business.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <p class="tag">OUR SERVICES</p>
+        <h2>What We Do</h2>
+        <div class="cards">
+          <div class="card"><div class="icon">📒</div><h3>Accounting</h3><p>Day-to-day accounting, ledger management and financial reports.</p></div>
+          <div class="card"><div class="icon">🧾</div><h3>GST Services</h3><p>GST return support, ITC working and GST-related compliance assistance.</p></div>
+          <div class="card"><div class="icon">💻</div><h3>Tally Services</h3><p>Tally entries, ledger grouping, inventory and business reports.</p></div>
+          <div class="card"><div class="icon">📑</div><h3>ITR Support</h3><p>Income-tax return related assistance and document preparation.</p></div>
+          <div class="card"><div class="icon">📊</div><h3>MIS Reports</h3><p>Sales, collection, payment and other useful business reports.</p></div>
+          <div class="card"><div class="icon">🤝</div><h3>Consultation</h3><p>Practical accounting and compliance guidance for businesses.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section light">
+      <div class="container about">
+        <div>
+          <p class="tag">ABOUT</p>
+          <h2>About Us</h2>
+          <p>We provide accounting and compliance support for individuals and businesses. Our focus is clear communication, organized records and practical service.</p>
+        </div>
+        <div class="info-box">
+          <h3>Why Choose Us?</h3>
+          <p>✓ Simple communication</p>
+          <p>✓ Organized accounting support</p>
+          <p>✓ Business-focused reports</p>
+          <p>✓ Easy WhatsApp communication</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="payment" class="section">
+      <div class="container payment">
+        <div>
+          <p class="tag">ONLINE PAYMENT</p>
+          <h2>Pay via UPI</h2>
+          <p>Scan the QR code below to make a payment.</p>
+          <p class="upi">UPI ID: yourname@upi</p>
+        </div>
+        <div class="qr-box">
+          <img src="qr.png" alt="UPI QR Code" onerror="this.style.display='none'; document.getElementById('qrNote').style.display='block';">
+          <p id="qrNote">Replace <b>qr.png</b> with your own UPI QR image.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <p class="tag">CONTACT</p>
+        <h2>Let's Work Together</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Contact Details</h3>
+            <p>📱 Mobile: <a href="tel:+919999999999">+91 99999 99999</a></p>
+            <p>💬 WhatsApp: <a href="https://wa.me/919999999999" target="_blank">Chat on WhatsApp</a></p>
+            <p>✉️ Email: yourname@example.com</p>
+            <p>📍 Location: Your City, India</p>
+          </div>
+          <form class="contact-card" onsubmit="sendMessage(event)">
+            <input id="name" type="text" placeholder="Your Name" required>
+            <input id="phone" type="tel" placeholder="Mobile Number" required>
+            <textarea id="message" rows="4" placeholder="How can we help?" required></textarea>
+            <button class="btn primary" type="submit">Send on WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <p>© 2026 Rajesh Accounts. All rights reserved.</p>
+      <p>Accounting • GST • Tally • ITR</p>
+    </div>
+  </footer>
+
+  <a class="float-wa" href="https://wa.me/919999999999" target="_blank" aria-label="WhatsApp">💬</a>
+  <script src="script.js"></script>
+</body>
+</html>
